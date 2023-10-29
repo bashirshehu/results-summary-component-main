@@ -1,0 +1,203 @@
+:root{
+    /* ## Colors */
+
+/* ### Primary */
+--light-red: hsl(0, 100%, 67%);
+--orangey-yellow: hsl(39, 100%, 56%);
+--green-teal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+/* (background) */
+--light-slate-blue: hsl(252, 100%, 67%);
+/* (background) */
+--ight-royal-blue: hsl(241, 81%, 54%);
+/*(circle)*/
+--violetblue: hsla(256, 72%, 46%, 1);
+/* (circle) */
+--persian-blue: hsla(241, 72%, 46%, 0);
+
+/* ### Neutral */
+--white: hsl(0, 0%, 100%);
+--pale-blue: hsl(221, 100%, 96%);
+--light-lavender: hsl(241, 100%, 89%);
+--dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        hsl(252, 100%, 67%),  /* Top color */
+        hsla(256, 72%, 46%, 1) 50%, /* Middle-top color at 50% */
+        hsl(241, 81%, 54%) /* Bottom color */
+    );
+    border-radius: 10px;
+    height: 350px;
+    text-align: center;
+    width: 270px;
+    color: white;
+  }
+  .circuler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        hsl(241, 81%, 54%),  /* Top color */
+        hsl(252, 100%, 67%)  /* Bottom color */
+    );
+    border-radius: 50%;
+    width: 130px; 
+    height: 130px; 
+    padding: 10px;
+    margin-top: 20px 0;
+
+  }
+  #only{
+    
+    margin-bottom: 25px;
+  }
+  .circuler h1{
+    font-size: 50px;
+  }
+  .container h2{
+    padding: 10px 0;
+  }
+  .result p{
+    width: 200px;
+  }
+  .lft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.summary {
+    text-align: left;
+    background-color: white;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 270px;
+  }
+  .s-lft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+  }
+  .s-lft img{
+    padding-right:10px;
+  }
+  .element1 .s-lft :nth-child(2) {
+    color:var(--light-red);
+  }
+  .element2 .s-lft :nth-child(2) {
+    color:var(--orangey-yellow)
+  }
+  .element3 .s-lft :nth-child(2) {
+    color: var(--green-teal);
+  }
+  .element4 .s-lft :nth-child(2) {
+    color: var(--ight-royal-blue);
+  }
+  span{
+    font-weight: bold;
+  }
+.element1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:hsl(0, 48%, 89%);
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.element2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:hsl(38, 32%, 83%);
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.element3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:hsl(166, 62%, 80%);
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.element4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:hsl(242, 47%, 85%);
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.btn{
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--dark-gray-blue);
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;   
+}
+.btn:active{
+    color: white; 
+    background: linear-gradient(
+        to bottom,
+        hsl(252, 100%, 67%),  /* Top color */
+        hsla(256, 72%, 46%, 1) 50%, /* Middle-top color at 50% */
+        hsl(241, 81%, 54%) /* Bottom color */
+    ); 
+}
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+  }
